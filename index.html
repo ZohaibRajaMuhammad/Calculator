@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="input" id="result"></div>
+         <!-- <input type="text" id="result" >  -->
+        <div class="buttons">
+             <button class="operator"  onclick="clearResult()" >AC</button>
+            <button class="operator"  onclick="deleteLastChar()">Del</button>
+            <button class="operator" onclick="handleclick('/')">/</button><!--appendOperator('/')-->
+            <button class="operator" onclick="handleclick('*')">*</button><!--appendOperator('*')-->
+            <button class="number" onclick="handleclick(7)">7</button><!--appendNumber('7')-->
+            <button class="number" onclick="handleclick(8)">8</button><!--appendNumber('8')-->
+            <button class="number" onclick="handleclick(9)">9</button><!--appendNumber('9')-->
+            <button class="operator" onclick="handleclick('-')">-</button><!--appendOperator('-')-->
+            <button class="number" onclick="handleclick(4)">4</button><!--appendNumber('4')-->
+            <button class="number" onclick="handleclick(5)">5</button><!--appendNumber('5')-->
+            <button class="number" onclick="handleclick(6)">6</button><!--appendNumber('6')-->
+            <button class="operator" onclick="handleclick('+')">+</button><!--appendOperator('+')-->
+            <button class="number" onclick="handleclick(1)">1</button><!--appendNumber('1')-->
+            <button class="number" onclick="handleclick(2)">2</button><!--appendNumber('2')-->
+           <button class="number" onclick="handleclick(3)">3</button><!--appendNumber('3')-->
+            <button class="operator" onclick="sum()">=</button><!--calculate()-->
+            <button class="number" onclick="handleclick(0)">0</button><!--appendNumber('0')-->
+             <button class="decimal" onclick="handleclick('.')">.</button><!--appendNumber('.') -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<!--  -->
